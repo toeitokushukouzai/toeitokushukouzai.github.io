@@ -10,8 +10,7 @@ export const Menu: FC<{ menuItems: MenuItem[] }> = ({ menuItems }) => {
     "inline-block p-4 text-black bg-my-subbrand rounded-t-lg active";
   const nonActiveTabClass =
     "inline-block p-4 rounded-t-lg hover:text-my-text hover:bg-my-subaccent";
-  console.log("Path = " + router.pathname);
-  console.log(menuItems.map((_) => _.path));
+
   const ListItems = menuItems.map((item) => {
     return (
       <li className="mr-2" key={"MI-" + item.id}>

@@ -10,8 +10,8 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <Head>
         <title>東栄特殊鋼材株式会社</title>
-        <GoogleAnalytics />
       </Head>
+      <GoogleAnalytics />
       <Header />
       <main className="bg-my-bg">
         <Component {...pageProps} />
